@@ -48,10 +48,28 @@ body {
     color: rgb(138, 255, 245); /* Light teal on hover */
 }
 
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack the header elements vertically */
+        align-items: center;
+        padding: 20px 20px;
+    }
 
+    .header nav {
+        width: 100%; /* Take full width */
+        display: flex;
+        justify-content: center;
+    }
 
-.header nav a:hover {
-    color: rgb(138, 255, 245); /* Light teal on hover */
+    .header nav ul {
+        flex-direction: column; /* Make nav links stack vertically */
+        align-items: center;
+    }
+
+    .header nav ul li {
+        margin: 10px 0; /* Add space between vertically stacked items */
+    }
 }
 
 /* Profile Section */
@@ -203,6 +221,7 @@ body {
 .footer a:hover {
     color: rgb(108, 204, 196); /* Slightly darker teal on hover */
 }
+
 /* Additional Details Section */
 .additional-details {
     padding: 50px;
