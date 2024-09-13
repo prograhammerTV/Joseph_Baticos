@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space out heading and navigation */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0; /* Remove default margin */
+}
+
+.header nav {
+    display: flex; /* Use flexbox to align items horizontally */
+}
+
+.header nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make the list items appear inline */
+}
+
+.header nav ul li {
+    margin: 0 15px; /* Space between each list item */
+}
+
+.header nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.header nav ul li a:hover {
+    color: rgb(138, 255, 245); /* Light teal on hover */
+}
+
+
+
+.header nav a:hover {
+    color: rgb(138, 255, 245); /* Light teal on hover */
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column; /* Makes the layout a column on small screens */
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: black;
+    box-shadow: -1px -5px 15px rgb(138, 255, 245), 5px 5px 15px rgb(138, 255, 245),
+    inset 5px 5px 10px #000000, inset -5px -5px 10px #000000;
+}
+
+.profile img {
+    width: 100%; /* Make image responsive */
+    max-width: 450px; /* Ensure it doesn't exceed the original size */
+    height: 450px; /* Maintain aspect ratio */
+    border-radius: 50%;
+    border-bottom: 2px solid;
+    border-color: rgb(138, 255, 245);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Space between image and intro section */
+}
+
+.intro-section {
+    text-align: center;
+    max-width: 100%; /* Ensure content doesn't overflow */
+}
+
+.intro-section h2 {
+    font-size: 28px;
+    margin-top: 20px;
+    color: white;
+}
+
+.intro-section p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(138, 255, 245); /* Light teal background */
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: -1px -3px 10px rgb(138, 255, 245), 5px 5px 15px rgb(138, 255, 245);
+}
+
+.button:hover {
+    background-color: rgb(108, 204, 196); /* Slightly darker teal on hover */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.social-icons a {
+    color: rgb(138, 255, 245); /* Light teal icons */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(108, 204, 196); /* Slightly darker teal on hover */
+}
+
+/* Services Section */
+.services {
+    padding: 50px;
+    background-color: #000000; /* Black background */
+}
+
+.services h3 {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column; /* Column layout for smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between service boxes */
+}
+
+@media (min-width: 768px) {
+    .service-container {
+        flex-direction: row; /* Row layout for larger screens */
+        justify-content: space-around;
+    }
+}
+
+.service-box {
+    background-color: rgb(34, 46, 45); /* Dark teal background */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-box i {
+    font-size: 40px;
+    color: white;
+    box-shadow: -1px -5px 15px rgb(138, 255, 245), 5px 5px 15px rgb(138, 255, 245);
+}
+
+.service-box h4 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(138, 255, 245);
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: rgb(138, 255, 245);
+    font-size: 24px;
+}
+
+.footer a:hover {
+    color: rgb(108, 204, 196); /* Slightly darker teal on hover */
+}
+/* Additional Details Section */
+.additional-details {
+    padding: 50px;
+    background-color: #ffffff; /* Dark gray background */
+    color: #ffffff; /* White text */
+    text-align: center;
+}
+
+.additional-details h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black; /* Light teal color */
+}
+
+.additional-details p {
+    font-size: 16px;
+    color: black;
+}
